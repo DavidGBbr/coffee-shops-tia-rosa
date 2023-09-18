@@ -1,30 +1,28 @@
-import Link from "next/link";
-
 const Header = () => {
   return (
     <header className="bg-primary text-white py-4 px-2">
       <div className="container mx-auto flex justify-between items-center flex-col sm:flex-row">
-        <Link href="/">
+        <a href="/">
           <span className="text-2xl font-bold italic">
             Coffee Shops Tia Rosa
           </span>
-        </Link>
+        </a>
         <nav className="mt-5 sm:m-0">
           <ul className="flex space-x-4">
             <li>
-              <Link href="/about">
+              <a href="#about">
                 <span className="hover:text-secondary">Sobre nós</span>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="/menu">
+              <a href="#menu">
                 <span className="hover:text-secondary">Menu</span>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="/contact">
+              <a href="#contact">
                 <span className="hover:text-secondary">Contato</span>
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
