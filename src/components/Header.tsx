@@ -12,18 +12,18 @@ const Header = () => {
         <nav className="mt-5 sm:m-0">
           <ul className="flex space-x-4">
             <li>
-              <Link href="/menu">
-                <span className="hover:text-gray-400">Menu</span>
+              <Link href="/about">
+                <span className="hover:text-secondary">Sobre nós</span>
               </Link>
             </li>
             <li>
-              <Link href="/about">
-                <span className="hover:text-gray-400">Sobre nós</span>
+              <Link href="/menu">
+                <span className="hover:text-secondary">Menu</span>
               </Link>
             </li>
             <li>
               <Link href="/contact">
-                <span className="hover:text-gray-400">Contato</span>
+                <span className="hover:text-secondary">Contato</span>
               </Link>
             </li>
           </ul>

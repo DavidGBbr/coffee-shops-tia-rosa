@@ -2,6 +2,7 @@ import { IMenuItem } from "@/types/MenuItem";
 import Image from "next/image";
 import React from "react";
 import MenuItem from "./MenuItem";
+import ContactForm from "./ContactForm";
 
 const Home = () => {
   const menuItems: IMenuItem[] = [
@@ -74,7 +75,7 @@ const Home = () => {
         </section>
 
         {/*Sobre nós */}
-        <section className="p-8">
+        <section className="p-4">
           <h1 className="font-semibold text-4xl text-left uppercase text-primary mb-8">
             Sobre nós
           </h1>
@@ -164,14 +165,20 @@ const Home = () => {
           <h1 className="font-semibold m-8 uppercase text-primary text-4xl text-left underline">
             Menu
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2  gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2  gap-4 p-4">
             {menuItems.map((item, index) => (
               <MenuItem key={index} {...item} />
             ))}
           </div>
         </section>
 
-        <section></section>
+        {/*Fale Conosco*/}
+        <section>
+          <h1 className="font-semibold m-8 uppercase text-primary text-4xl text-left underline">
+            Fale Conosco
+          </h1>
+          <ContactForm />
+        </section>
       </div>
     </div>
   );
