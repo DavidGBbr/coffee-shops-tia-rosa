@@ -10,9 +10,9 @@ const Footer = () => {
               Horário de Funcionamento
             </h3>
             <p className="text-sm">
-              Segunda a Sexta: 7:00 AM - 9:00 PM
+              Segunda a Sexta: 7:00 - 21:00
               <br />
-              Sábado e Domingo: 8:00 AM - 8:00 PM
+              Sábado e Domingo: 8:00 - 20:00
             </p>
           </div>
           <div className="mb-4">
